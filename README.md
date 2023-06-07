@@ -1,18 +1,11 @@
 ## origin_appフォルダ：
-Reactを適用する前のTodoアプリ。基本は "https://sbfl.net/blog/2018/08/25/nodejs-express-webapi/" に記述されている内容を板書している。
-
+Reactを適用する前のTodoアプリ。基本は "https://sbfl.net/blog/2018/08/25/nodejs-express-webapi/" に記述されている内容を板書している。  
 
 Typescript(tsx)で記述するタイプも作成してみたが、App.tsが上手く動かなかったので保留している。
 
 
-
-## srcフォルダ：
-フロントエンドのソースを格納。元アプリのindex.htmlをいくつかのコンポーネントに分割した。package.jsonのある階層でnpm startでポート3000番で起動。  
- * TodoItemでは、タスクの内容、チェックボックス、削除ボタンを表示。  
- * TodoListでは、タスク全体を表示してチェックボックス変更イベントと削除ボタンクリックイベントを処理。  
- * NewTodoItemFormでは、新しいタスクを追加するフォームを表示する  
- * 各コンポーネントはApp.jsにてインポートされ、処理を渡す(npm startで読み込まれるのはindex.jsなので、index.js内でApp.jsがインポートされる)  
-
+## publicフォルダ：
+静的ファイルを格納する場所。index.htmlは削除するとエラーが起こるので残している。
 
 
 ## serverフォルダ：
@@ -24,9 +17,16 @@ Typescript(tsx)で記述するタイプも作成してみたが、App.tsが上�
  5. PUTリクエストで、タスクデータのdone状態を反転する(恐らく、以前作成したアプリと同じように状態を確認してから反転するという機能ではないので、要検討)。  
 
 
+## srcフォルダ：
+フロントエンドのソースを格納。元アプリのindex.htmlをいくつかのコンポーネントに分割した。package.jsonのある階層でnpm startでポート3000番で起動。  
+ * TodoItemでは、タスクの内容、チェックボックス、削除ボタンを表示。  
+ * TodoListでは、タスク全体を表示してチェックボックス変更イベントと削除ボタンクリックイベントを処理。  
+ * NewTodoItemFormでは、新しいタスクを追加するフォームを表示する  
+ * 各コンポーネントはApp.jsにてインポートされ、処理を渡す(npm startで読み込まれるのはindex.jsなので、index.js内でApp.jsがインポートされる)  
 
-## publicフォルダ：
-静的ファイルを格納する場所。index.htmlは削除するとエラーが起こるので残している。
+
+
+
 
 
 
