@@ -1,3 +1,11 @@
+## origin_appフォルダ：
+Reactを適用する前のTodoアプリ。基本は "https://sbfl.net/blog/2018/08/25/nodejs-express-webapi/" に記述されている内容を板書している。
+
+
+Typescript(tsx)で記述するタイプも作成してみたが、App.tsが上手く動かなかったので保留している。
+
+
+
 ## srcフォルダ：
 フロントエンドのソースを格納。元アプリのindex.htmlをいくつかのコンポーネントに分割した。package.jsonのある階層でnpm startでポート3000番で起動。  
  * TodoItemでは、タスクの内容、チェックボックス、削除ボタンを表示。  
@@ -21,11 +29,7 @@
 静的ファイルを格納する場所。index.htmlは削除するとエラーが起こるので残している。
 
 
-## origin_appフォルダ：
-Reactを適用する前のTodoアプリ。基本は "https://sbfl.net/blog/2018/08/25/nodejs-express-webapi/" に記述されている内容を板書している。
 
-
-Typescript(tsx)で記述するタイプも作成してみたが、App.tsが上手く動かなかったので保留している。
 
 
 
